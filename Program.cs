@@ -49,11 +49,13 @@ while (true)
 
         case "2":
             var students = repo.GetAllStudents();
+            Console.WriteLine("\n========================");
             Console.WriteLine("\nList of Students:");
             foreach (var student in students)
             {
                 Console.WriteLine($"ID: {student.Id}, Name: {student.Name}, Age: {student.Age}");
             }
+            Console.WriteLine("\n========================");
             break;
 
         case "3":
