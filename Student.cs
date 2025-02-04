@@ -20,7 +20,7 @@ namespace SqliteDemoConsole
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlite("Data Source=students.db");
+            optionsBuilder.UseSqlite("Data Source=c:/sqlite/students01.db");
         }
     }
 
