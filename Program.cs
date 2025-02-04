@@ -43,8 +43,8 @@ while (true)
             Console.Write("Enter Age: ");
             int age = int.Parse(Console.ReadLine()!);
             Student newStudent = new Student { Name = name, Age = age };   
-            //repo.AddStudent(name, age);
-            repo.AddStudent(newStudent);
+            repo.AddStudent(name, age);
+           
             break;
 
         case "2":
@@ -77,7 +77,7 @@ while (true)
             string newName = Console.ReadLine()!;
             Console.Write("Enter New Age: ");
             int newAge = int.Parse(Console.ReadLine()!);
-            //repo.UpdateStudent(updateId, newName, newAge);
+            repo.UpdateStudent(updateId, newName, newAge);
             break;
 
         case "5":
